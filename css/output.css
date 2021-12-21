@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+}
+
+body .main-container .stopwatch-container .border .counter, body .main-container .stopwatch-container {
+  font-family: "Roboto Mono", monospace;
+}
+
+body .main-container .stopwatch-container .border, body .main-container .stopwatch-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+body .main-container .stopwatch-container .border .counter, body .main-container .stopwatch-container .icon-container, body .main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+body {
+  height: 100vh;
+  overflow-y: hidden;
+  background-color: #202020;
+}
+body .main-container {
+  height: 100vh;
+  overflow-y: hidden;
+}
+body .main-container .times-container {
+  height: 450px;
+  width: 150px;
+  border: 3px solid black;
+  margin-right: 50px;
+  background-color: aliceblue;
+  border-radius: 10px;
+  overflow-y: scroll;
+  color: black;
+  font-weight: 200;
+  margin-right: 5px;
+}
+body .main-container .times-container p {
+  text-align: center;
+  font-size: 20px;
+}
+body .main-container .times-container ol li {
+  padding: 5px;
+}
+body .main-container .stopwatch-container .icon-container i {
+  margin-top: 20px;
+  font-size: 20px;
+  color: aliceblue;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin: 20px;
+}
+body .main-container .stopwatch-container .icon-container i:active {
+  transform: scale(0.9);
+}
+body .main-container .stopwatch-container .icon-container i:hover {
+  color: #87f5fb;
+}
+body .main-container .stopwatch-container .border {
+  border: 7px solid #87f5fb;
+  height: 300px;
+  width: 300px;
+  margin: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 1px #87f5fb;
+  background-color: aliceblue;
+}
+body .main-container .stopwatch-container .border .counter {
+  font-size: 50px;
+}
+body .main-container .stopwatch-container button {
+  padding: 1.3em 3em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 600;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  margin-bottom: 15px;
+}
+body .main-container .stopwatch-container button:hover {
+  background-color: #87f5fb;
+  box-shadow: 0px 5px 15px #87f5fb;
+  color: #fff;
+  transform: translateY(-7px);
+}
+body .main-container .stopwatch-container button:active {
+  transform: translateY(-1px);
+}
+body .main-container .stopwatch-container .start.hidden {
+  visibility: hidden;
+}
+body .main-container .stopwatch-container .start {
+  z-index: 10;
+  position: absolute;
+}
+body .main-container .stopwatch-container .pause {
+  z-index: 1;
+}
+body .main-container .stopwatch-container .pause.hidden {
+  visibility: hidden;
+}
+
+/*# sourceMappingURL=output.css.map */
